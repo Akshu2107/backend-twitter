@@ -30,7 +30,7 @@ app.use(cors(corsOptions));
 // api
 app.get('/', (req, res) => res.send('Hello World!'))
 app.use("/api/v1/user", userRoute);
-// app.use("/api/v1/tweet", tweetRoute);
+app.use("/api/v1/tweet", tweetRoute);
 
 
 
