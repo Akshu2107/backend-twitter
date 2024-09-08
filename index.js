@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser'
 import dotenv from 'dotenv';
 import cors from "cors";
 import userRoute from './routes/userroutes.js';
-import tweetRoute from './routes/tweetroutes.js'
+// import tweetRoute from './routes/tweetroutes.js'
 
 dotenv.config({
     path: "./.env"
@@ -30,7 +30,7 @@ app.use(cors(corsOptions));
 // api
 app.get('/', (req, res) => res.send('Hello World!'))
 app.use("/api/v1/user", userRoute);
-app.use("/api/v1/tweet", tweetRoute);
+// app.use("/api/v1/tweet", tweetRoute);
 
 
 
