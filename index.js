@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser'
 import dotenv from 'dotenv';
 import cors from "cors";
 import userRoute from './routes/userroutes.js';
-// import tweetRoute from './routes/tweetroutes.js'
+import tweetRoute from './routes/tweetroutes.js'
 
 dotenv.config({
     path: "./.env"
