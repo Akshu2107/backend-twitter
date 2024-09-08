@@ -21,7 +21,8 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin: "https://66dd590d19010d5bbb662b01--jovial-tarsier-48cadc.netlify.app/login/",
+    // origin: "https://66dd590d19010d5bbb662b01--jovial-tarsier-48cadc.netlify.app",
+    origin: "*",
     credentials: true
 }
 app.use(cors(corsOptions));
